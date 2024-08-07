@@ -41,7 +41,7 @@ const sortMap=(map)=>{
       </h1>
       <div className='result-container'>
       {
-        getMap(data).map((item, index) => (
+        getMap(data).slice(0,10).map((item, index) => (
           <li key={index}>{item}</li>
         ))
       }   
